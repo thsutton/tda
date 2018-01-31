@@ -7,24 +7,51 @@ main main5,6
 ./Setup.hs,15
 main main1,2
 
-./src/Lib.hs,453
-module Lib Lib6,7
-data Z2 Z217,18
-data Z2 = Z Z17,18
-data Z2 = Z | I I17,18
-instance instance19,20
-type Point Point46,47
-data Simplex Simplex49,50
-data Simplex (k :: Nat) = Simplex Simplex49,50
-data Chain Chain58,59
-  Chain Chain59,60
-simplexBoundary simplexBoundary67,68
-simplexBoundary simplexBoundary68,69
-chainBoundary chainBoundary79,80
-chainBoundary chainBoundary80,81
-someFunc someFunc82,83
-someFunc someFunc83,84
+./src/Lib.hs,1212
+module Lib Lib11,12
+class Field Field23,24
+class Field Field23,24
+  fplus fplus25,26
+  fzero fzero27,28
+  fnegate fnegate29,30
+  fmult fmult32,33
+  fone fone34,35
+  frecip frecip36,37
+instance instance38,39
+data Z2 Z248,49
+data Z2 = Z Z48,49
+data Z2 = Z | I I48,49
+class Dimension Dimension84,85
+class Dimension Dimension84,85
+  dim dim85,86
+type Point Point89,90
+data Simplex Simplex92,93
+data Simplex (k :: Nat) = Simplex Simplex92,93
+data Simplex (k :: Nat) = Simplex { points points92,93
+simplex simplex99,100
+simplex simplex100,101
+isFaceOf isFaceOf104,105
+isFaceOf isFaceOf105,106
+data Chain Chain115,116
+  Chain Chain116,117
+chainLength chainLength118,119
+chainLength chainLength119,120
+links links124,125
+links links125,126
+multiplyChain multiplyChain127,128
+multiplyChain multiplyChain128,129
+simplifyChain simplifyChain140,141
+simplifyChain simplifyChain141,142
+class Boundary Boundary158,159
+  boundary :: forall c k. (Ord c, Num c, Abelian c) => s s159,160
+  boundary boundary159,160
+newtype SimplexC SimplexC162,163
+newtype SimplexC c k = SimplexC SimplexC162,163
+newtype SimplexC c k = SimplexC { unwrap unwrap162,163
 
-./test/Spec.hs,30
-main main0,1
-main main1,2
+./test/Spec.hs,146
+module Main Main2,3
+main main6,7
+main main7,8
+boundOfBoundIsEmpty boundOfBoundIsEmpty10,11
+boundOfBoundIsEmpty boundOfBoundIsEmpty11,12
