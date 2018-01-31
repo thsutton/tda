@@ -50,3 +50,4 @@ tests:
     dependencies:
     - tda
     - hedgehog
+    - containers

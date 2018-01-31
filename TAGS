@@ -49,13 +49,15 @@ newtype SimplexC SimplexC162,163
 newtype SimplexC c k = SimplexC SimplexC162,163
 newtype SimplexC c k = SimplexC { unwrap unwrap162,163
 
-./test/Spec.hs,266
+./test/Spec.hs,408
 module Main Main3,4
-genSimplex genSimplex14,15
-genSimplex genSimplex15,16
-prop_boundOfBoundIsEmpty prop_boundOfBoundIsEmpty18,19
-prop_boundOfBoundIsEmpty prop_boundOfBoundIsEmpty19,20
-tests tests23,24
-tests tests24,25
-main main27,28
-main main28,29
+genSimplex genSimplex16,17
+genSimplex genSimplex17,18
+prop_boundOfBoundIsEmptyZ2 prop_boundOfBoundIsEmptyZ219,20
+prop_boundOfBoundIsEmptyZ2 prop_boundOfBoundIsEmptyZ220,21
+prop_boundOfBoundIsEmptyFloat prop_boundOfBoundIsEmptyFloat24,25
+prop_boundOfBoundIsEmptyFloat prop_boundOfBoundIsEmptyFloat25,26
+tests tests29,30
+tests tests30,31
+main main33,34
+main main34,35
