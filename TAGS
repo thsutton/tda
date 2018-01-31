@@ -1,0 +1,30 @@
+
+./app/Main.hs,52
+module Main Main0,1
+main main4,5
+main main5,6
+
+./Setup.hs,15
+main main1,2
+
+./src/Lib.hs,453
+module Lib Lib6,7
+data Z2 Z217,18
+data Z2 = Z Z17,18
+data Z2 = Z | I I17,18
+instance instance19,20
+type Point Point46,47
+data Simplex Simplex49,50
+data Simplex (k :: Nat) = Simplex Simplex49,50
+data Chain Chain58,59
+  Chain Chain59,60
+simplexBoundary simplexBoundary67,68
+simplexBoundary simplexBoundary68,69
+chainBoundary chainBoundary79,80
+chainBoundary chainBoundary80,81
+someFunc someFunc82,83
+someFunc someFunc83,84
+
+./test/Spec.hs,30
+main main0,1
+main main1,2
